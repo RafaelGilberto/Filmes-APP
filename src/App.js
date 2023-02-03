@@ -17,7 +17,9 @@ function App() {
               cartazImg={setImg}
               image={currentMovies.backdrop_path}
             />
-            <CartazFilme image={movImg} />
+            {currentMovies.backdrop_path == movImg && (
+              <CartazFilme image={movImg} />
+            )}
           </div>
         );
       })}
